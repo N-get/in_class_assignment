@@ -3,7 +3,7 @@ import unittest
 import factorial
 class factorial1(unittest.TestCase):
     def test_factorial(self):
-            Firstname = int(input("Input your number!"))
+        for Firstname in range(1, 101):
             self.assertIsInstance(Firstname, int, 'Entry is not of the correct type!')
             self.assertTrue(Firstname, 'Entry is blank!')
             factorial.factorial(Firstname)
