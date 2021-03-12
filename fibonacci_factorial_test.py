@@ -3,16 +3,14 @@ import factorial
 import fibonacci
 class factorial1(unittest.TestCase):
     def test_factorial(self):
-        for Firstname in range(1, 101):
+        for Firstname in range(0, 101):
             self.assertIsInstance(Firstname, int, 'Entry is not of the correct type!')
-            self.assertTrue(Firstname, 'Entry is blank!')
             factorial.factorial(Firstname)
 
 class fibonacci1(unittest.TestCase):
     def test_fibonacci(self):
-        for Firstname1 in range(1, 21):
+        for Firstname1 in range(0, 21):
             self.assertIsInstance(Firstname1, int, 'Entry is not of the correct type!')
-            self.assertTrue(Firstname1, 'Entry is blank!')
             result1 = fibonacci.fibonacci(Firstname1)
             print(result1)
 
